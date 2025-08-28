@@ -79,13 +79,13 @@ function Dashboard() {
       />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* KPI Cards */}
+   
         <KPICards 
           products={productsData?.products || []} 
           loading={productsLoading} 
         />
         
-        {/* Trend Chart */}
+        
         <div className="mt-8">
           <TrendChart 
             kpis={kpisData?.kpis || []} 
@@ -93,7 +93,7 @@ function Dashboard() {
           />
         </div>
         
-        {/* Filters */}
+       
         <div className="mt-8">
           <Filters
             warehouses={warehousesData?.warehouses || []}
@@ -102,7 +102,7 @@ function Dashboard() {
           />
         </div>
         
-        {/* Products Table */}
+     
         <div className="mt-6">
           <ProductsTable
             products={productsData?.products || []}
@@ -112,7 +112,7 @@ function Dashboard() {
         </div>
       </div>
       
-      {/* Product Detail Drawer */}
+ 
       <ProductDrawer
         isOpen={isDrawerOpen}
         product={selectedProduct}
